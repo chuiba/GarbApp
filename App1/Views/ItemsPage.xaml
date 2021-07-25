@@ -20,15 +20,19 @@
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:Item" Orientation="Horizontal">
+                    <StackLayout Padding="5" x:DataType="model:Item" Orientation="Horizontal">
+                        <Label Text="{Binding Id}" 
+                            LineBreakMode="NoWrap"                             
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16"   />
                         <Label Text="{Binding Text}" 
                             LineBreakMode="NoWrap"                             
                             Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="16" />
+                            FontSize="16"    />
                         <Label Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="16" />
+                            FontSize="16"   />
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"

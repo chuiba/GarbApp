@@ -47,14 +47,15 @@ namespace App1.Services
                     Description = number.ToString()
                 });
             }
-        }
 
+            // TODO: 排序这里做了, 后续可以考虑做成参数
+            items.Sort();
+        }
 
         public GarbDataStore()
         {
             // 获取所有的装扮信息
             items = new List<Item>();
-
             updateGarbInfo();
         }
 
@@ -65,8 +66,11 @@ namespace App1.Services
 
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
         {
-            updateGarbInfo();
-            return await Task.FromResult(items);
+            return await Task.Run(() =>
+            {
+                updateGarbInfo();
+                return items;
+            });
         }
     }
 }
