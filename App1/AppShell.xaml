@@ -32,7 +32,8 @@
     <TabBar>
         <ShellContent Title="主页" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="全部" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="监控" Icon="icon_check_all.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="监控" Icon="icon_check_all.png" ContentTemplate="{DataTemplate local:RecentListViewPage}" />
+        <ShellContent Title="设定" Icon="icon_setting.png" ContentTemplate="{DataTemplate local:Setting}" />
     </TabBar>
 
 

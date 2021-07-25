@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Setting">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="参数配置页面,用于存储各种参数, 还没开始做, 包括: 监控ID, 刷新频率, 最大尝试次数, 是否启用代理, 代理服务器IP和端口; "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
